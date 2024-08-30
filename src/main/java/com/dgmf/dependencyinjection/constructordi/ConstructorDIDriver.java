@@ -9,7 +9,7 @@ public class ConstructorDIDriver {
                 "applicationConstructorInjection.xml"
         );
 
-        Car myCar = (Car) context.getBean("car");
+        CarConstructorDI myCar = (CarConstructorDI) context.getBean("car");
         myCar.displayCarDetails();
     }
 }

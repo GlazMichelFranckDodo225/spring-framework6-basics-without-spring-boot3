@@ -5,11 +5,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="specification" class="com.dgmf.dependencyinjection.constructordi.Specification">
+    <bean id="specification" class="com.dgmf.dependencyinjection.constructordi.SpecificationConstructorDI">
         <property name="make" value="Toyota" />
         <property name="model" value="Corolla" />
     </bean>
-    <bean id="car" class="com.dgmf.dependencyinjection.constructordi.Car">
+
+    <bean id="car" class="com.dgmf.dependencyinjection.constructordi.CarConstructorDI">
         <constructor-arg ref="specification" />
     </bean>
 </beans>

@@ -1,6 +1,6 @@
 package com.dgmf.dependencyinjection.constructordi;
 
-public class Specification {
+public class SpecificationConstructorDI {
     private String make;
     private String model;
 
